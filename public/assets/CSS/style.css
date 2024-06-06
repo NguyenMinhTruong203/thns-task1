@@ -1,0 +1,161 @@
+.nav-sidebar {
+	background: #fff;
+	flex: 0 0 270px;
+	position: relative;
+}
+
+.nav-main__menu {
+	flex: 1;
+	background: #9f9f9f;
+	border-radius: 4px;
+	margin-left: 5px;
+}
+
+.nav-sidebar__head {
+	padding: 0;
+	justify-content: center;
+	width: 100%;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: #505050;
+	border-radius: 4px;
+	height: 35px;
+	display: flex;
+	align-items: center;
+}
+
+.nav-sidebar__dropdown {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	background: #fff;
+	right: 0;
+	z-index: 1000;
+	border-radius: 0 0 5px 5px;
+}
+
+.insTemplate .nav-sidebar__dropdown {
+	display: none;
+}
+
+.insTemplate .nav-sidebar:hover .nav-sidebar__dropdown {
+	display: block;
+}
+
+.insTemplate .nav-sidebar .mainChild {
+	margin-left: 0;
+	transform: none;
+}
+
+.nav-sidebar__head i {
+	font-size: 22px;
+	margin-right: 10px;
+}
+
+.nav-sidebar__list {
+	padding: 10px 0 0;
+	margin: 0;
+}
+
+.nav-sidebar__list>li {
+	padding: 0 10px;
+}
+
+.nav-sidebar__list>li>a {
+	position: relative;
+	display: flex;
+	padding: 10px 5px;
+	line-height: 1.5;
+	align-items: center;
+	width: 100%;
+	transition: none;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.nav-sidebar__list>li:last-child>a {
+	border-bottom: 0;
+}
+
+.nav-sidebar__list>li:hover>a {
+	background-color: #f5f5f5;
+	font-weight: 700;
+	color: #333333;
+}
+
+.nav-sidebar__list>li>a span {
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.nav-sidebar__list>li>a>img {
+	margin-right: 10px;
+	max-width: 20px;
+}
+
+.nav-sidebar .mainChild {
+	opacity: 1;
+	visibility: visible;
+	box-shadow: none;
+	border-top: none;
+	left: 100%;
+	top: 0;
+	min-height: 100%;
+	transform: translate(-1px, 0px);
+	min-width: 100%;
+	padding: 0px;
+	display: none;
+	z-index: 111;
+	box-shadow: 0px 0px 6px rgb(0 0 0 / 25%);
+	border-radius: 8px;
+	border-color: rgba(0, 0, 0, 0.25);
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	margin-left: 5px;
+}
+
+.nav-sidebar__list>li:hover>.mainChild {
+	display: block;
+}
+
+.main-child__content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.main-child__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1;
+}
+
+.main-child__banner {
+	flex: 0 0 200px;
+	max-width: 200px;
+}
+
+.main-child__wrapper .main-child__item {
+	padding: 10px 20px;
+	-ms-flex: 0 0 25%;
+	flex: 0 0 25%;
+	max-width: 25%;
+}
+
+.nav-sidebar .mainChild li a {
+	border: none;
+	background: transparent !important;
+	width: 100%;
+	text-align: left;
+	padding: 0 !important;
+}
+
+.nav-sidebar .mainChild li a:hover {
+	text-decoration: underline;
+}
+
+.nav-sidebar .mainChild li a:before {
+	display: none;
+}

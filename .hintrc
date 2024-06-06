@@ -1,0 +1,38 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "axe/text-alternatives": [
+      "off",
+      {
+        "image-alt": "off"
+      }
+    ],
+    "axe/aria": [
+      "default",
+      {
+        "aria-required-children": "off"
+      }
+    ],
+    "no-protocol-relative-urls": "off",
+    "axe/name-role-value": "off",
+    "disown-opener": "off",
+    "axe/forms": "off",
+    "meta-viewport": "off",
+    "compat-api/css": "off"
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_chr <= 123",
+    "not and_ff <= 124",
+    "not chrome <= 123",
+    "not edge <= 123",
+    "not firefox <= 124",
+    "not ios_saf <= 17.4",
+    "not opera <= 107",
+    "not safari <= 17.4",
+    "not samsung <= 24"
+  ]
+}
